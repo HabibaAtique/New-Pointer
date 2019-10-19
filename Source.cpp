@@ -12,7 +12,7 @@ int* max(int* ptr, int m)
 			*maxi = *(maxi + i);
 		}
 	}
-	return maxi;
+	return maxi;   //it will return the address of maximum number
 }
 int main()
 {
@@ -31,9 +31,9 @@ int main()
 		sum = sum + q[i];
 	}
 	cout << "AVERAGE: " << sum / n << endl;
-	int* t = max(q, n);
+	int* t ;
+	t=max(q, n);
 	cout << "MAX MARKS ARE: " << *t;
 	delete[]p;
-	delete[]q;
 	return 0;
 }
