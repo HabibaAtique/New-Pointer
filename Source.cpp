@@ -1,8 +1,8 @@
-#include <iostream>
-#include<string>
+#include <iostream>//input/output stream
+#include<string>//string library
 #include<stdlib.h>
 using namespace std;
-int* max(int* ptr, int m)
+int* max(int* ptr, int m)//pointer function to find maximum value
 {
 	int* maxi = ptr;
 	for (int i = 0; i < m; i++)
@@ -14,6 +14,7 @@ int* max(int* ptr, int m)
 	}
 	return maxi;
 }
+//MAIN RUNS HERE//
 int main()
 {
 	int n;
